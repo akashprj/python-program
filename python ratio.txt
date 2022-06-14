@@ -1,0 +1,21 @@
+#print the ratio of number of positive, negative, zero number to the number of array/list element.
+
+arr=[]
+n=int(input("Enter the no of element"))
+for i in range (0,n):
+    ele=int(input())
+    arr.append(ele)
+p=neg=z=0
+for i in range (0,n):
+    if arr[i]>0:
+        p+=1
+    elif arr[i]<0:
+        neg+=1
+    else:
+        z+=1
+pr=p/n
+nr=neg/n
+zr=z/n
+print(pr)
+print(nr)
+print(zr)

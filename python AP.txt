@@ -1,0 +1,18 @@
+//Check sequence is AP or not
+
+lst=[]
+n=int(input("Enter the no of element: "))
+for i in range (0,n):
+    print("Enter the" ,i+1,"element")
+    ele=int(input())
+    lst.append(ele)
+d=0
+s=0
+d=lst[1]-lst[0]
+for i in range (0,n-1):
+    if d==lst[i+1] - lst[i]:
+        s+=1
+if s==n-1:
+    print("Yes")
+else:
+    print("No")
